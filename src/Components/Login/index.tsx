@@ -1,5 +1,5 @@
 import React, { useState, FormEvent } from "react";
-import { PrimaryButton } from "office-ui-fabric-react/lib/Button";
+// import { PrimaryButton } from "office-ui-fabric-react/lib/Button";
 import { Stack, TextField } from "@fluentui/react";
 
 const Login = () => {
@@ -14,7 +14,7 @@ const Login = () => {
     const { name, value } = event.currentTarget;
     setUser({ ...user, [name]: value });
   };
-
+  
   const log123 = () => {
     console.log(user.email);
   };
@@ -45,7 +45,7 @@ const Login = () => {
               revealPasswordAriaLabel="Show password"
         />
         </Stack.Item>
-        <PrimaryButton onClick={log123}>LOGIN</PrimaryButton> 
+        {/* <PrimaryButton onClick={log123}>LOGIN</PrimaryButton>  */}
       </Stack>
     </Stack>
   );

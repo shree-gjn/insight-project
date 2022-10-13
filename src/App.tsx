@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Sample from './Components/Sample';
 import Login from './Components/Login';
+import MainRoutes from './Components/Routes';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       { /* Sidebar */}
 
       { /* Inner container */}
+      <MainRoutes/>
     </div>
   );
 }

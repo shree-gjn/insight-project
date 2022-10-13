@@ -1,9 +1,9 @@
 import React from "react";
 
-const InnerContent=() => {
-    return <div className="inner-content">
+const Settings=() => {
+    return <div className="settings">
         Inner Content
     </div>
 }
 
-export default InnerContent;
+export default Settings;
