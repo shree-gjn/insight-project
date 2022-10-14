@@ -15,9 +15,9 @@ const Login = () => {
     setUser({ ...user, [name]: value });
   };
   
-  const log123 = () => {
-    console.log(user.email);
-  };
+  // const log123 = () => {
+  //   console.log(user.email);
+  // };
 
   return (
     <Stack>

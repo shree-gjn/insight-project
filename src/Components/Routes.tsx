@@ -1,9 +1,9 @@
 import React from 'react';
 // import {Routes, Route} from 'react-router-dom';
-import Dashboard from './Sidebar/Dashboard';
-import InnerContent from './InnerContent';
-import Tabs from './Sidebar/Tabs';
-import Settings from './Sidebar/Settings';
+// import Dashboard from './Sidebar/Dashboard';
+// import InnerContent from './InnerContent';
+// import Tabs from './Sidebar/Tabs';
+// import Settings from './Sidebar/Settings';
 
 const MainRoutes=()=> {
     return <div>
