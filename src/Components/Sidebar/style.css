@@ -1,0 +1,26 @@
+.App .sidebar{
+    display: flex;
+}
+
+.sidebar{
+    position: fixed;
+    width: 100px;
+    background-color:#6a9ac1;
+    height: 100%;
+    padding-top: 200px;
+    padding-left: 20px;
+    margin-top: -20px;
+}
+
+.sidebar__items{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__items a{
+    color:#000;
+    font-size:14px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    text-align: left;
+}

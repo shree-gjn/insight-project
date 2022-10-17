@@ -1,19 +1,19 @@
 import React from 'react';
-// import {Routes, Route} from 'react-router-dom';
-// import Dashboard from './Sidebar/Dashboard';
-// import InnerContent from './InnerContent';
-// import Tabs from './Sidebar/Tabs';
-// import Settings from './Sidebar/Settings';
+import {Routes, Route, Navigate} from 'react-router-dom';
+import Workflow from './Workflow/Workflow';
+import InnerContent from './InnerContent';
+import Database from './Database/Database';
+import Visualisation from './Visualisation/Settings';
 
 const MainRoutes=()=> {
     return <div>
-        {/* <Routes>
+        { <Routes>
             <Route path="/" element={<InnerContent />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/tabs" element={<Tabs />} />
-            <Route path="/settings" element={<Settings />} />
-
-        </Routes> */}
+            <Route path="/" element={<Navigate replace to="workflow" />} />
+            <Route path="workflow" element={<Workflow />} />
+            <Route path="database" element={<Database />} />
+            <Route path="visualisation" element={<Visualisation />} />
+        </Routes> }
     </div>
 }
 
