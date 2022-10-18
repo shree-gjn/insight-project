@@ -13,7 +13,7 @@ const UseAuth=() => {
 
 const PublicRoutes=(props:any) => {
     const auth=UseAuth()
-    return auth?  <Navigate to="/workspace" />: <Outlet />
+    return auth?  <Navigate to="/workflow" />: <Outlet />
 }
 
 export default PublicRoutes;
