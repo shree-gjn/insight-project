@@ -7,13 +7,12 @@ import Visualisation from './Visualisation/Settings';
 import Login from './Login';
 
 import ProtectedRoutes from './ProtectedRoutes';
-// import PublicRoutes from './PublicRoutes';
+import PublicRoutes from './PublicRoutes';
 
 const MainRoutes=()=> {
     return <div>
         { <Routes>
             <Route path="/" element={<ProtectedRoutes />} >
-            <Route path="/" element={<InnerContent />} />
             <Route path="/" element={<Navigate replace to="workflow" />} />
             <Route path="workflow" element={<Workflow />} />
             <Route path="database" element={<Database />} />
@@ -21,7 +20,9 @@ const MainRoutes=()=> {
             </Route>
 
             <Route>
-            <Route path="login" element={<Login />}></Route>
+                <Route path="/" element={<PublicRoutes />}>
+                    <Route path="login" element={<Login />} />
+                </Route>
             </Route>
         </Routes>
          }
