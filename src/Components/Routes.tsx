@@ -17,7 +17,6 @@ const MainRoutes=()=> {
             <Route path="database" element={<Database />} />
             <Route path="visualisation" element={<Visualisation />} />
             </Route>
-
             <Route>
                 <Route path="/" element={<PublicRoutes />}>
                     <Route path="login" element={<Login />} />
