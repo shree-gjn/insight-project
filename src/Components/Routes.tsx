@@ -7,7 +7,7 @@ import Visualisation from './Visualisation/Settings';
 import Login from './Login';
 
 import ProtectedRoutes from './ProtectedRoutes';
-import PublicRoutes from './PublicRoutes';
+// import PublicRoutes from './PublicRoutes';
 
 const MainRoutes=()=> {
     return <div>
